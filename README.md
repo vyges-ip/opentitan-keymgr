@@ -1,25 +1,29 @@
-# Key Manager HWIP Technical Specification
+# OpenTitan
 
-[`keymgr`](https://reports.opentitan.org/hw/ip/keymgr/dv/latest/report.html):
-![](https://dashboards.lowrisc.org/badges/dv/keymgr/test.svg)
-![](https://dashboards.lowrisc.org/badges/dv/keymgr/passing.svg)
-![](https://dashboards.lowrisc.org/badges/dv/keymgr/functional.svg)
-![](https://dashboards.lowrisc.org/badges/dv/keymgr/code.svg)
+![OpenTitan logo](./doc/opentitan-logo.png)
 
-# Overview
+## About the project
 
-This document specifies the functionality of the OpenTitan key manager.
+[OpenTitan](https://opentitan.org) is an open source silicon Root of Trust (RoT) project.
+OpenTitan will make the silicon RoT design and implementation more transparent, trustworthy, and secure for enterprises, platform providers, and chip manufacturers.
+OpenTitan is administered by [lowRISC CIC](https://www.lowrisc.org) as a collaborative project to produce high quality, open IP for instantiation as a full-featured product.
+See the [OpenTitan site](https://opentitan.org) and [OpenTitan docs](https://opentitan.org/book/) for more information about the project.
 
-## Features
+## About this repository
 
-- One-way key and identity (working) state hidden from software.
-- Version controlled identity and key generation.
-- Key generation for both software consumption and hardware sideload.
-- Support for DICE open profile.
+This repository contains hardware, software and utilities written as part of the OpenTitan project.
+It is structured as monolithic repository, or "monorepo", where all components live in one repository.
+It exists to enable collaboration across partners participating in the OpenTitan project.
 
+## Documentation
 
-## Description
+The project contains comprehensive documentation of all IPs and tools.
+You can access it [online at opentitan.org/book/](https://opentitan.org/book/).
 
-The key manager implements the hardware component of the [identities and root keys](../../../doc/security/specs/identities_and_root_keys/) strategy of OpenTitan.
+## How to contribute
 
-It enables the system to shield critical assets from software directly and provides a simple model for software to use derived key and identity outputs.
+Have a look at [CONTRIBUTING](CONTRIBUTING.md) and our [documentation on project organization and processes](./doc/project_governance/README.md) for guidelines on how to contribute code to this repository.
+
+## Licensing
+
+Unless otherwise noted, everything in this repository is covered by the Apache License, Version 2.0 (see [LICENSE](https://github.com/lowRISC/opentitan/blob/master/LICENSE) for full text).
